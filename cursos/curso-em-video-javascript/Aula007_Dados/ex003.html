@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- configurações pré-definidas de uma página inicial -->
+
+    <!-- tipo da escrita brasileira(acentos e afins ) -->
+    <meta charset="UTF-8">
+
+    <!-- config automatica pra diferentes dispositivos  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- titulo do documento, que aparece encima no navegado -->
+    <title>Tratando Dados</title>
+
+    <!-- usando css para estilizar diretamente no html -->
+    <style>
+        body {
+            background-color: blue;
+            /*Comentário em CSS*/
+            color: white;
+            font: normal 20pt Arial;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- script de js -->
+    <script>
+        //    Pergunta nome e guarda valor na Var 'nome'
+        // var n1 = Number.parseFloat(window.prompt('Digite um número: '))    //recebe valor string e converte para Float
+        // var n2 =  Number.parseInt(window.prompt('Escreva outro número: ')) //recebe valor string e converte para Int
+        var n1 = Number(window.prompt('Informe um número: ')) //Nova sintaxe, recebe valor e reconhece se é int ou float
+        var n2 = Number(window.prompt('Informe outro número: ')) //Nova sintaxe, recebe valor e reconhece se é int ou float
+        var s = n1 + n2
+        window.alert(` A soma entre ${n1} e ${n2} é igual a ${s}`)
+        // Number  +  Number para adição
+        //  String + String para concatenação
+
+    </script>
+
+</body>
+
+</html>

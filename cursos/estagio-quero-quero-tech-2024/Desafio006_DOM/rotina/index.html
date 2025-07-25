@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Projeto Fitness</title>
+</head>
+<body>
+  <main>
+
+    <header>
+      <h1>Estágio QQTECH6</h1>
+    </header>
+
+    <div class="formulario">
+      <fieldset>
+        <legend>Cadastro de Exercicios</legend>
+
+        <label for="atividade">Atividade</label>
+        <input type="text" id="atividade" name="atividade">
+
+        <label for="tempo">Tempo:</label>
+        <input type="number" id="tempo" name="tempo">
+
+      </fieldset>
+
+      <input type="button" value="Cadastrar" onclick="rastreadorRotina()">
+      <input type="button" value="Resultados" onclick="mostraResultados()">
+    </div>
+
+    <div id="resultado" class="resultado">
+
+    </div>
+
+  </main>
+  <footer>
+    <strong>10ABR24</strong>
+    Repositório GitHub QQTECH6
+    <code>code by: Pablo Araújo</code> &copy;<br>
+    <a href="https://github.com/phpablo/QQTECH6" target="_blank">
+    </a>
+  </footer>
+  <script src="rastreadorRotina.js"></script>
+</body>
+</html>

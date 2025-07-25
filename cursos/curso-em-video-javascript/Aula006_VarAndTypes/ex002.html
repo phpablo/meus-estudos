@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- configurações pré-definidas de uma página inicial -->
+    
+    <!-- tipo da escrita brasileira(acentos e afins ) -->
+    <meta charset="UTF-8">
+    
+    <!-- config automatica pra diferentes dispositivos  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- titulo do documento, que aparece encima no navegado -->
+    <title>Document</title>
+    
+    <!-- usando css para estilizar diretamente no html -->
+    <style>
+        body{
+            background-color: blue;
+            color: white;
+            font: normal 20pt Arial;
+
+        }
+    </style>
+</head>
+<body> 
+        <!-- CORPO DO ARQUIVO -->
+        <h1>Hello World</h1>
+        <p>I am free of the curse</p>
+        <hr>
+    <!-- CÓDIGO JAVASCRIPT -->
+    <script>
+        // command 'prompt' return string always 
+       var num1 = Number.parseInt(window.prompt('Set a number: ')) //return string
+       var num2 = Number.parseInt(window.prompt('now, another number: ')) //return string
+       var sum = num1 + num2 // do not sum, just concatenate
+              // return the sum of the numbers  41
+       window.alert('The sum of the numbers: ' + num1 + ' and ' + num2 + ' is equal to ' + String(sum) )  
+
+       // return concatenate the numbers 
+       //window.alert('The sum of the numbers: ' + num1 + ' e ' + num2 + ' é igual a ' + sum)
+    </script>
+    
+</body>
+</html>

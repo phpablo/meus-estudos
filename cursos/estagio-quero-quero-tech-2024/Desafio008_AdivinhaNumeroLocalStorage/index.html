@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubra o Número</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+
+    <div id="header">
+      <header>
+        <h1>Descubra o Número</h1>
+      </header>
+    </div>
+
+    <div id="palpite">
+
+
+      <label id="id_nameUser" style="display: none;" for="nameUser">Nome do Player:</label>
+      <input style="display: none;" type="text" id="nameUser" required>
+
+      <label for="input">Adivinhe o número entre 1 e 100:</label>
+      <input style="display: none;" type="number" id="input" placeholder="28" required min="1" max="100">
+
+      <input id="start" style="display: block;" type="button" value="Iniciar Jogo" class="start" onclick="startGame()">
+
+      <input id="play" style="display: none;" type="button" value="Adivinhar número" class="play" onclick="jogar()">
+
+      <input style="display: block;" type="button" id="mostraRank" value="Mostrar Ranking" onclick="mostrarRanking()">
+
+
+      <input id="tentar" style="display: none;" type="button" value="Tentar Novamente" class="start"
+        onclick="startGame()">
+
+      <input id="denovo" style="display: none;" type="button" value="Jogar Novamente" class="start"
+        onclick="startGame()">
+
+
+
+      <input id="rank" style="display: none;" type="button" value="Salvar Rank" class="play"
+        onclick="salvarRankingLocal()">
+
+    </div>
+
+    <div id="resultado" style="display: none;">
+
+    </div>
+
+    <div class="footer">
+
+      <footer>
+        <strong>14ABR24</strong>
+        <code>code by: Pablo Araújo</code> &copy;<br>
+        <a href="https://github.com/phpablo/QQTECH6" target="_blank">
+          Repositório GitHub QQTECH6
+        </a>
+      </footer>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="geraErro.js"></script>
+  <script src="geraLimite.js"></script>
+  <script src="geraDicas.js"></script>
+</body>
+</html>

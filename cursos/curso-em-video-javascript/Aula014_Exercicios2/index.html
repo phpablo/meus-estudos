@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo/estilo.css">
+  <title>Desafio JS</title>
+</head>
+<body>
+  <!-- CONTENT PRINCIPAL  -->
+  <main>
+    <!-- CABEÇALHO  -->
+    <header>
+      <!-- titulo principal  -->
+      <h1>Verificador de Idade</h1>
+    </header>
+    <!-- FIM CABEÇALHO  -->
+
+    <!-- SECTION  -->
+    <section>
+      <!-- PRIMEIRA DIV  -->
+      <div>
+        <label for="AnoNascimento" id="AnoNascimento">Ano de Nascimento:</label>
+        <label for="ano"></label><input type="number" placeholder="1500" id="ano" /> <br>
+        <hr>
+        <label for="sex" id="sex">Sexo:</label>
+        <label for="mas"></label>Masculino<input type="radio" id="mas" name="radsex" checked>
+        <label for="fem"></label>Feminino<input type="radio" id="fem" name="radsex"><br>
+        <hr>
+        <input type="button" name="verificar" placeholder="verificar" value="Verificar" onclick="verificar()"><br>
+      </div><br>
+      <!-- FIM PRIMEIRA DIV  -->
+
+      <!-- SEGUNDA DIV  -->
+      <div id="res">
+        <label for="info">Preencha os dados acima para ver o resultado!</label>
+
+      </div>
+      <!-- FIM SEGUNDA DIV  -->
+    </section>
+    <!-- FIM SECTION  -->
+    <footer>
+      &copy; <strong>PHPAblo</strong>
+    </footer>
+
+    <!-- SCRIPTS DA PAGINA  -->
+    <script src="js/script.js">
+
+    </script>
+    <!-- FIM SCRIPTS DA PAGINA  -->
+  </main>
+  <!-- CONTEÚDO PRINCIPAL  -->
+
+</body>
+</html>
