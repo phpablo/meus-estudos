@@ -14,7 +14,7 @@ Este repositório contém um guia completo e prático sobre como criar mensagens
 | 🔧 :wrench: | chore: | manutencao de funcionalidade | - Inclui paramêtro na funcaoGetNome | O parâmetro agora é NULL caso não for passado | Resolvido Tarefa  #0037
 | ♻️ :recycle: | refactor: | refatora funcao getNome | - não precisa mais de um parâmetro via get | Removeu codigo antigo e com muitas condições aninhadas | Resolvido Tarefa  #0038
 | 🎨 :art: | style: | novo layout da foto de perfil | - adiciona novo layou para seção de perfil | Layout atualizado com cores da empresa | Resolvido Tarefa  #00359
-| 📝 :docs: | doc: | add documentacao da funcao | - documenta a funcao principal da sessão de perfil | Seguir a documentacao de cada funcao para evitar redundância | Resolvido Tarefa  #00359
+| 📝 :pencil: | doc: | add documentacao da funcao | - documenta a funcao principal da sessão de perfil | Seguir a documentacao de cada funcao para evitar redundância | Resolvido Tarefa  #00359
 | ✅ :white_check_mark: | test: | aprovado testes de verificacao | - feito teste de validação de token | Teste aprova aceitação de strings na function getNome sem o ID int | Resolvido Tarefa  #00359
 
 ## ✍️ Exemplo de um commit completo
