@@ -1,0 +1,5 @@
+print('Desafio 2 - formata data')
+dia = input('Qual o dia que você nasceu ? ')
+mes = input('Agora digite o mês:  ')
+ano = input('E o ano é qual ? ')
+print('Voce nasceu no dia ',dia, ' do mês de ',mes,' no ano de ', ano, '. Correto ?')

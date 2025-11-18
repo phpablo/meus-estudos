@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Estilos CSS - By: Pablo Araujo</title>
+  <style>
+    body {
+      background-color: tex aquamarine;
+      font-size: 24px;
+    }
+
+    p {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      animation: mudarCor 1s infinite;
+    }
+
+    @keyframes mudarCor {
+      0% {
+        color: green
+      }
+
+      50% {
+        color: blueviolet
+      }
+
+      100% {
+        color: green
+      }
+
+    }
+
+
+    p {
+      color: darkgreen;
+    }
+
+    .box1 {
+      width: 200px;
+      height: 200px;
+      padding: 20px;
+      background-color: #fad;
+      text-align: center;
+      position: absolute;
+
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: #dda;
+      text-align: center;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 12px;
+
+      }
+    }
+
+    input[type="button"] {
+      background-color: rgb(119, 199, 119);
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    input[type="button"]:hover {
+      background-color: rgb(89, 169, 89);
+    }
+  </style>
+</head>
+<input type="button" value="Clique Aqui">
+<h1>Estilos CSS</h1>
+<p>Não, disse Ron, em um tom nada convincente. Mas antes que Harry pudesse exigir ver o jornal. Draco Malfoy gritou do
+  outro lado do Salão Principal, da mesa da Sonserina.Ei, Potter! Potter! Como está sua cabeça? Você está se sentindo
+  bem? Tem certeza de que não vai enlouquecer conosco?Malfoy também estava segurando um exemplar do Profeta Diário. Os
+  sonserinos de todos os lados da mesa estavam rindo, girando em seus assentos para ver a reação de Harry.</p>
+<hr>
+
+<div class="box1">
+  <label for="">BOX1</label>
+  <div class="box2">
+    <label for="">BOX2</label>
+  </div>
+</div>
+<hr>
+
+
+
+<body>
+
+</body>
+
+</html>
