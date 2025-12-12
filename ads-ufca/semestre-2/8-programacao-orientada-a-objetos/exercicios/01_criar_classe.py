@@ -11,5 +11,3 @@ class Pessoa:
 p1 = Pessoa()
 p1.salvar_dados('Gohan', 12, 1.60, 60)
 p1.apresentar()
-
-
