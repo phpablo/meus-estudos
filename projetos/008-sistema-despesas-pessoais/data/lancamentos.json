@@ -1,80 +1,28 @@
 [
     {
-        "classe": "Receita",
-        "valor": 4000.0,
-        "categoria": {
-            "nome": "Salário",
-            "tipo": "RECEITA",
-            "limite": 0.0,
-            "descricao": ""
-        },
-        "data": "2025-12-15",
-        "descricao": "Salário Mensal",
-        "forma_pagamento": "Pix"
-    },
-    {
         "classe": "Despesa",
-        "valor": 1200.0,
+        "valor": 160.0,
         "categoria": {
             "nome": "Moradia",
             "tipo": "DESPESA",
-            "limite": 1200.0,
+            "limite": 500.0,
             "descricao": ""
         },
-        "data": "2025-12-15",
-        "descricao": "Aluguel",
-        "forma_pagamento": "Pix"
-    },
-    {
-        "classe": "Despesa",
-        "valor": 300.0,
-        "categoria": {
-            "nome": "Lazer",
-            "tipo": "DESPESA",
-            "limite": 200.0,
-            "descricao": ""
-        },
-        "data": "2025-12-15",
-        "descricao": "Churrasco",
-        "forma_pagamento": "Crédito"
-    },
-    {
-        "classe": "Despesa",
-        "valor": 1200.0,
-        "categoria": {
-            "nome": "Viagem",
-            "tipo": "DESPESA",
-            "limite": 1000.0,
-            "descricao": ""
-        },
-        "data": "2025-12-15",
-        "descricao": "Minas Gerais",
+        "data": "2026-01-13",
+        "descricao": "Conta de Energia",
         "forma_pagamento": "pix"
     },
     {
-        "classe": "Despesa",
-        "valor": 200.0,
-        "categoria": {
-            "nome": "Viagem",
-            "tipo": "DESPESA",
-            "limite": 1000.0,
-            "descricao": ""
-        },
-        "data": "2025-12-15",
-        "descricao": "compras",
-        "forma_pagamento": "dinheiro"
-    },
-    {
         "classe": "Receita",
-        "valor": 10000.0,
+        "valor": 1000.0,
         "categoria": {
-            "nome": "Salário",
+            "nome": "Salario",
             "tipo": "RECEITA",
             "limite": 0.0,
             "descricao": ""
         },
-        "data": "2025-12-15",
-        "descricao": "bonificacao fgts",
-        "forma_pagamento": "dinheiro"
+        "data": "2026-01-13",
+        "descricao": "caiu o salario",
+        "forma_pagamento": "pix"
     }
 ]

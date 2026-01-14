@@ -1,26 +1,14 @@
 [
     {
-        "nome": "Salário",
-        "tipo": "RECEITA",
-        "limite": 0.0,
-        "descricao": ""
-    },
-    {
         "nome": "Moradia",
         "tipo": "DESPESA",
-        "limite": 1200.0,
+        "limite": 500.0,
         "descricao": ""
     },
     {
-        "nome": "Lazer",
-        "tipo": "DESPESA",
-        "limite": 200.0,
-        "descricao": ""
-    },
-    {
-        "nome": "Viagem",
-        "tipo": "DESPESA",
-        "limite": 1000.0,
+        "nome": "Salario",
+        "tipo": "RECEITA",
+        "limite": 0.0,
         "descricao": ""
     }
 ]

@@ -1,6 +1,15 @@
 from fastapi import FastAPI
+from pydantic import BaseModel
+from typing import Optional,List
+
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-  return {"Message":"Docker está funcionando"}
+class Task(BaseModel):
+  id: int
+  title: str
+  description: Optional[str] = None
+  done: bool = False
+
+tasks_db = []
+
+@app.get("/tasks",response_model=List[Task])
