@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d570d03-7a18-44a0-b03e-4447262c8146" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exercicios/ex038.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/ex39.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/ex40.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/ex41.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercicios/ex42.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex43.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercicios/ex44.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercicios/ex42.py" beforeDir="false" afterPath="$PROJECT_DIR$/exercicios/ex42.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +43,8 @@
     "Python.ex040.executor": "Run",
     "Python.ex39.executor": "Run",
     "Python.ex41.executor": "Run",
+    "Python.ex42.executor": "Run",
+    "Python.ex44.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
