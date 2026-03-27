@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  # ---------------------------------------------------------
+  # SALA 1: O Banco de Dados da Imobiliária (A Origem)
+  # Finge que este é o banco de dados que roda por trás do seu 
+  # portal. É aqui que caem os imóveis novos.
+  # ---------------------------------------------------------
+  db_origem:
+    image: postgres:15
+    container_name: facilita_origem
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: imobiliaria_db
+    ports:
+      - "5432:5432" # Porta padrão do Postgres
+    volumes:
+      - volume_origem:/var/lib/postgresql/data # O "cofre" para os dados não sumirem
+
+  # ---------------------------------------------------------
+  # SALA 2: O nosso Data Warehouse (O Destino)
+  # Este é o galpão analítico. É para cá que vamos trazer os dados
+  # e onde o 'dbt' vai fazer a mágica de cruzar tudo depois.
+  # ---------------------------------------------------------
+  db_dw:
+    image: postgres:15
+    container_name: facilita_dw
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: warehouse_db
+    ports:
+      - "5433:5432" # Usamos a porta 5433 no seu PC para não dar conflito com a sala 1
+    volumes:
+      - volume_dw:/var/lib/postgresql/data
+
+  # ---------------------------------------------------------
+  # SALA 3: O Apache Airflow (O Gerente)
+  # Ele vai acordar todo dia, olhar para a Sala 1 e mandar os dados para a Sala 2.
+  # ---------------------------------------------------------
+  airflow:
+    image: apache/airflow:2.7.2
+    container_name: facilita_airflow
+    command: airflow standalone # Modo perfeito para rodar localmente sem travar o PC
+    environment:
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False # Remove aqueles exemplos poluídos que vêm de fábrica
+    ports:
+      - "8080:8080" # A porta onde vamos acessar o painel do Airflow no navegador
+    volumes:
+      - ./dags:/opt/airflow/dags   # Conecta a nossa futura pasta de DAGs com o Airflow
+      - ./data:/opt/airflow/data   # Conecta a nossa pasta de arquivos CSV com o Airflow
+
+# Aqui nós avisamos ao Docker para criar fisicamente os "cofres" (volumes)
+volumes:
+  volume_origem:
+  volume_dw:

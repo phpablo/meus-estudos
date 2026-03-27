@@ -31,3 +31,4 @@ for numero in tupla_numeros:
 # 7. Conversão
 lista = list(tupla_numeros)
 tupla_nova = tuple(lista)
+

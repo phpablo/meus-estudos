@@ -20,8 +20,7 @@ dados_extraidos = []
 print("--- INICIANDO O ROBÔ ---")
 
 with pdfplumber.open(arquivo_pdf) as pdf:
-    # 2. A MÁGICA ACONTECE AQUI NA LINHA DE BAIXO vvv
-    # tqdm(pdf.pages) cria a barra de progresso automática baseada no total de páginas
+   
     for pagina in tqdm(pdf.pages, desc="Lendo Páginas", unit="pág"):
 
         tabela = pagina.extract_table()
