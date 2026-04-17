@@ -1,12 +1,10 @@
 -- ================================
 -- WINDOWS FUNCTION
 -- ================================
-SELECT gender, AVG(salary) as avg_salary
+SELECT dem.first_name, dem.last_name, gender, AVG(salary) OVER(PARTITION BY gender)
 FROM employee_demographics AS dem
 JOIN employee_salary AS sal
-	ON dem.employee_id = sal.employee_id
-GROUP BY gender
-;
+	ON dem.employee_id = sal.employee_id;
 
 -- ================================
 -- SUBQUERYS
