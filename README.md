@@ -1,89 +1,58 @@
-# 📚 Meus Estudos
+# 📚 Repositório de Estudos
 
-Repositório pessoal para organizar e acompanhar meus estudos nas graduações de Engenharia de Software (UniAmérica) e Análise e Desenvolvimento de Sistemas (UFCA), além de exercícios práticos e desafios de programação.
-
----
-
-## 🎓 Graduações
-
-### UniAmérica – Engenharia de Software
-
-/eng-soft-uniamerica/
-├── semestre-1/
-├── semestre-2/
-└── ...
-
-
-### UFCA – ADS
-
-/ads-ufca/
-├── semestre-1/
-├── semestre-2/
-└── ...
-
-
-Cada semestre contém pastas por disciplina, com exercícios, anotações e projetos.
+Repositório pessoal para organizar e acompanhar meus estudos nas graduações de **Engenharia de Software** e **Análise e Desenvolvimento de Sistemas (ADS - UFCA)**, além de exercícios práticos e desafios.
 
 ---
 
-## 💻 Desafios de Programação
+## 🎓 Estrutura do Repositório
 
-Plataformas como LeetCode, Codewars, HackerRank e desafios próprios.
+O repositório foi reestruturado para suportar ambos os cursos, mantendo as divisões exatas utilizadas por cada instituição.
 
-/desafios/
-├── leetcode/
-│ ├── easy/
-│ ├── medium/
-│ └── hard/
-├── codewars/
-│ ├── 8kyu/
-│ ├── 7kyu/
-│ └── ...
-└── outros/
-└── desafios-pessoais/
+### 📂 Organização de Pastas
+```text
+├── ads-ufca/
+│   ├── 1-Semestre/
+│   │   ├── 1. fundamentos-algoritmos/
+│   │   └── ...
+│   ├── 2-Semestre/
+│   └── 3-Semestre/
+│
+├── engenharia-software/
+│   ├── 1-Semestre/
+│   │   ├── trimestre-1a/
+│   │   └── trimestre-1b/
+│   ├── ...
+│   └── 6-Semestre/
+│       ├── trimestre-6a/
+│       │   ├── Compliance e Qualidade/
+│       │   ├── Metodologia Agil/
+│       │   ├── Optativas/
+│       │   ├── Projetos de Extensao (PEX)/
+│       │   └── Testes de Software/
+│       └── trimestre-6b/
+│
+├── Documentos-Para-Google-Drive/ (Arquivos PDFs/Word/PPTs para mover para a nuvem)
+└── Extracurricular/ (Cursos, projetos paralelos e desafios de programação)
+```
 
-
----
-
-## 🛠️ Projetos
-
-Mini projetos, provas de conceito (POCs) e aplicações de estudo.
-
-projetos/
-├── crud-php/
-├── blog-react/
-└── ...
-
-
----
-
-## 📝 Resumos
-
-Anotações de conteúdo teórico e resumos para revisão.
-
-/resumos/
-├── algoritmos/
-├── banco-dados/
-├── redes/
-└── ...
-
+**Regras do Repositório:** Apenas projetos de código, scripts e arquivos `.md` são mantidos aqui. Documentos pesados (PDFs, Word, PPT) são gerenciados no Google Drive.
 
 ---
 
-## ✅ Commits (convention)
+## ✅ Padrão de Commits
 
 Uso do padrão [Conventional Commits](https://www.conventionalcommits.org):
 
-- `:sparkles:feat`: nova funcionalidade ou exercício
-- `:bug:fix`: correção de erro
-- `:pencil:docs`: documentação ou resumos
-- `:recycle:refactor`: melhoria no código sem mudar funcionalidade
-- `:white_check_mark:test`: arquivos de teste
-- `:zap:perf`: melhoria de performance 
-- `::wrench:chore`: tarefas auxiliares, configs, `.gitignore`, etc.
+- `:sparkles: feat`: nova funcionalidade ou projeto
+- `:bug: fix`: correção de erro
+- `:pencil: docs`: documentação
+- `:recycle: refactor`: melhoria no código sem mudar funcionalidade
+- `:white_check_mark: test`: arquivos de teste
+- `:zap: perf`: melhoria de performance 
+- `:wrench: chore`: tarefas auxiliares, configs, `.gitignore`, etc.
 
 ---
 
 ## 🚀 Objetivo
 
-Manter um histórico claro, versionado e reutilizável dos meus estudos em programação e engenharia de software.
+Manter um histórico limpo, focado apenas em código e totalmente versionado, dos meus estudos na faculdade e no mundo do desenvolvimento de software.

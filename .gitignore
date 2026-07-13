@@ -1,0 +1,41 @@
+# IDEs e Editores
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Java/C/C++
+*.class
+*.exe
+*.dll
+*.o
+*.so
+
+# Variáveis de ambiente
+.env
+
+# Builds
+dist/
+build/
